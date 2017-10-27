@@ -1,0 +1,29 @@
+title: Bangkok Impress | OUR PRIDE Let us be a part of your success
+subtitle: OUR PRIDE Let us be a part of your success
+email: anna.bangkokimpress@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+# baseurl: "/bangkokimpress" # the subpath of your site, e.g. /blog
+# url: "https://magnamm.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+
+author:
+street_address: 37/135 Tiwanon-Pakkred22 Rd. Soi Sahakorn5 Bangpood
+city: Pakkred
+state: Nonthaburi
+zip_code: 11120
+country: Thailand
+phone: +669 4449 6463
+
+twitter_username: jekyllrb
+github_username:  jekyll
+
+collections:
+  work:
+    output: true
+    permalink: work/:path/
+    layout: subpage.html
+
+# Build settings
+markdown: kramdown
+# theme: minima
+plugins:
+  - jekyll-feed

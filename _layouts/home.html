@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body class="is-loading">
+<div id="wrapper">
+	{% include intro.html %}
+	
+	{% include menu.html %}
+	<header id="header"></header>
+		<div class="container" style="background-color: white; padding: 20px; margin-top: -1em">
+		{{ content }}
+		{% include subLogo.html %}
+		</div>
+	</div>
+
+	{% include footer.html %}
+</div>
+</body>
+</html>
