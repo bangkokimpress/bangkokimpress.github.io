@@ -8,7 +8,7 @@
 		<div class="col-lg-4 col-sm-6 d-flex align-items-stretch">
 			<div class="card">
 				{% if node.layout == "subpage" %}
-					<a href="{{ node.url  | absolute_url }}" ><img class="card-img-top" src="{{ node.image | relative_url }}" alt="" style="background-color: white"></a>
+					<a href="{{ node.url  | absolute_url }}" ><img class="card-img-top" src="{{ node.image | relative_url }}" alt="" style="background-color: white; width: 75%"> {{ node.subtitle }} </a>
 					<div class="card-body">
 						<!-- <h4 class="card-title">Card title</h4> -->
 						<p class="card-text">{{ node.description }}</p>

@@ -1,37 +1,31 @@
 {% assign current_page = page.url %}
-
 <!-- Nav -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-
-
-<a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ 'assets/images/mainLogo.png' | relative_url}}" width="150"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-    	{% for page in site.pages %}
-    		{% if page.layout == "home" %}
-    			<li{% if current_page == page.url %} class="active nav-item" {% else %} class=" nav-item" {% endif %}>
-    				<a href="{{ "/" | absolute_url }}" class="nav-link">{{ page.title }}</a>
-				</li>
-			{% endif %}
+	<a class="navbar-brand" href="{{ site.baseurl }}/"><img src="{{ 'assets/images/mainLogo.png' | relative_url}}" width="150"></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			{% for page in site.pages %}
+			{% if page.layout == "home" %}
+			<li{% if current_page == page.url %} class="active nav-item" {% else %} class=" nav-item" {% endif %}>
+			<a href="{{ "/" | absolute_url }}" class="nav-link">{{ page.title }}</a>
+		</li>
+		{% endif %}
 		{% endfor %}
 		{% for page in site.pages %}
-			{% if page.layout == "page" %}
-				<li{% if current_page == page.url %} class="active nav-item" {% else %} class=" nav-item" {% endif %}>
-					<a href="{{ page.url | absolute_url }}" class="nav-link">{{ page.title }}</a>
-				</li>
-			{% endif %}
-		{% endfor %}
-  </div>
+		{% if page.layout == "page" %}
+		<li{% if current_page == page.url %} class="active nav-item" {% else %} class=" nav-item" {% endif %}>
+		<a href="{{ page.url | absolute_url }}" class="nav-link">{{ page.title }}</a>
+	</li>
+	{% endif %}
+	{% endfor %}
+	</div>
 </nav>
-
 <!-- <div class="header sticky"> -->
-    <nav class="navbar navbar-default navbar-static-top topnav" role="navigation"> 
-        <div class="container-fluid"> 
+	<nav class="navbar navbar-default navbar-static-top topnav" role="navigation"> 
+		<div class="container-fluid"> 
             <!-- <div class="navbar-header"> 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
                     <span class="sr-only">Toggle navigation</span> 
@@ -42,37 +36,33 @@
                 <a class="navbar-brand" href="#">Bangkok Impress</a> 
             </div> -->                         
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> 
-                <ul class="nav navbar-nav"> 
-                	<li>
-                		<a class="navbar-brand" href="{{ site.baseurl }}/">
-                		<!-- Bangkok Impress -->
-                		<img src="{{ 'assets/images/mainLogo.png' | relative_url}}" height="100%">
-                		</a> 
-                	</li>
-                	{% for page in site.pages %}
-                		{% if page.layout == "home" %}
-                			<li{% if current_page == page.url %} class="active"{% endif %}>
-                				<a href="{{ "/" | absolute_url }}">{{ page.title }}</a>
-            				</li>
-						{% endif %}
-					{% endfor %}
-					{% for page in site.pages %}
-						{% if page.layout == "page" %}
-							<li{% if current_page == page.url %} class="active"{% endif %}>
-								<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
-							</li>
-						{% endif %}
-					{% endfor %}
-                </ul>                             
-            </div>                         
-        </div>                     
-    </nav>
+            	<ul class="nav navbar-nav"> 
+            		<li>
+            			<a class="navbar-brand" href="{{ site.baseurl }}/">
+            				<!-- Bangkok Impress -->
+            				<img src="{{ 'assets/images/mainLogo.png' | relative_url}}" height="100%">
+            			</a> 
+            		</li>
+            		{% for page in site.pages %}
+            		{% if page.layout == "home" %}
+            		<li{% if current_page == page.url %} class="active"{% endif %}>
+            		<a href="{{ "/" | absolute_url }}">{{ page.title }}</a>
+            	</li>
+            	{% endif %}
+            	{% endfor %}
+            	{% for page in site.pages %}
+            	{% if page.layout == "page" %}
+            	<li{% if current_page == page.url %} class="active"{% endif %}>
+            	<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+        </ul>                             
+    </div>                         
+</div>                     
+</nav>
 <!-- </div> -->
-
-
-
 <!-- <nav id="nav" > -->
-
 		<!-- <ul class="links">
 		<li>
 			<a class="navbar-brand" href="{{ site.baseurl }}">
@@ -121,9 +111,5 @@
 				{% if site.linkedin_url %}
 				<li><a href="{{ site.linkedin_url }}" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
 				{% endif %}
-
-		</ul> -->
-<!-- </nav> -->
-
-<!-- Main -->
-<div id="main">
+			</ul> -->
+			<!-- </nav> -->

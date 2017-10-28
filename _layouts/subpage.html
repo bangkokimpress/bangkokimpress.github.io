@@ -6,6 +6,8 @@
 	
 	{% include header.html %}
 	{% include menu.html %}
+	<!-- Main -->
+	<div id="main">
 		<div class="container" style="background-color: white; padding: 20px; margin-top: -1em">
 			{% if page.image %}
             <!-- <div class="image main"> -->
@@ -15,7 +17,8 @@
 		{{ content }}
 		{% include subLogo.html %}
 		</div>
-
+	</div>
+	</div>
 	{% include footer.html %}
 </div>
 </body>
