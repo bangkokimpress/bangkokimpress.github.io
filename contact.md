@@ -6,9 +6,24 @@ image: assets/images/mainLogo.png
 description: “OUR PRIDE”  Let us  be a part of your success
 ---
 
-<div id="footer" action="https://formspree.io/{{ site.email }}" method="POST">
+<!-- <div id="footer" action="https://formspree.io/{{ site.email }}" method="POST"> -->
+<div id="footer">
 	<section>
-		<form method="post" action="#">
+		<form name="contact" action="thank-you" netlify>
+		<div class="field">
+		    <label>Your Name: <input type="text" name="name"></label>   
+		</div>
+		<div class="field">
+		    <label>Your Email: <input type="email" name="email"></label>
+		</div>
+		<div class="field">
+		    <label>Message: <textarea name="message"></textarea></label>
+		</div>
+		<div class="field">
+		    <button type="submit">Send</button>
+		</div>
+		</form>
+		<!-- <form method="post" action="#">
 			<div class="field">
 				<label for="name">Name</label>
 				<input type="text" name="name" id="name" />
@@ -24,7 +39,7 @@ description: “OUR PRIDE”  Let us  be a part of your success
 		<ul class="actions">
 			<li><input type="submit" value="Send Message" /></li>
 		</ul>
-		</form>
+		</form> -->
 	</section>
 	
 <section class="split contact">

@@ -4,6 +4,7 @@ num: 3
 title: Bangkok Impress Special Project
 subtitle: การจัดงาน
 image: assets/images/bangkok impress spciall final.png
+subimage: assets/images/sublogo3.png
 description: ผู้ผลิตภาพยนตร์สารคดีทรงคุณค่า ประวัติศาตร์ และความสัมพันธ์ระหว่างประเทศ เพื่อก่อให้เกิดแรงบันดาลใจต่อการใช้ชีวิต และการรับรู้ต่อปรากฏการณ์ที่เกิดขึ้นกับโลกและสังคมที่ดำเนินอยู่
 ---
 <!-- <h3>งาน ๑๐๙วันการพระศพ สมเด็จพระญาณสังวร สมเด็จพระสังฆราชสกลมหาสังฆปริณายก </h3> -->

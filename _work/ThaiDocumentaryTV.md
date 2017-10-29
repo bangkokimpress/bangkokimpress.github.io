@@ -4,6 +4,7 @@ num: 1
 title: Thai Documentary TV
 subtitle: สาระคดี
 image: assets/images/bangkok impress final.png
+subimage: assets/images/sublogo1.png
 description: มุ่งเน้นการส่งเสริมการดำเนินงานด้านสิ่งแวดล้อมและการพัฒนาอย่างยั่งยืนของธุรกิจต่างๆ เพื่อให้เกิดประโยชน์ร่วมกันต่อผู้มีส่วนได้เสีย เกิดเป็นสังคมที่อยู่ร่วมกันอย่างยั่งยืน ถาวร 
 ---
 <section>
