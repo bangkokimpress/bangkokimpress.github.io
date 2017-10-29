@@ -13,8 +13,11 @@ zip_code: 11120
 country: Thailand
 phone: +669 4449 6463
 
-twitter_username: jekyllrb
-github_username:  jekyll
+facebook: bangkokimpress
+instagram: bangkokimpress
+youtube: bangkokimpress
+twitter: bangkokimpress
+
 
 collections:
   work:

@@ -58,4 +58,13 @@ description: “OUR PRIDE”  Let us  be a part of your success
 <section>
 	<h3>Email</h3>
 	<p><a href="#">{{ site.email }}</a></p>
+	
+</section>
+
+<section>
+	<p style="font-size: 28pt; text-align: center; vertical-align: middle; align-self: center;">
+	<a href="http://www.facebook.com/{{ site.facebook }}/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+	<a href="https://www.instagram.com/{{ site.instagram }}/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+	<a href="https://twitter.com/{{ site.twitter }}/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+	</p>
 </section>
